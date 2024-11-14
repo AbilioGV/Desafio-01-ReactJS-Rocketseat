@@ -1,0 +1,41 @@
+.addForm {
+  display: flex;
+  justify-content: center;
+  height: 54px;
+  transform: translateY(-27px);
+  gap: 8px;
+}
+
+.addForm input {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  width: 638px;
+  height: 100%;
+  padding: 16px;
+  color: var(--gray-100);
+}
+
+.addForm input::placeholder {
+  color: var(--gray-300);
+}
+
+.button {
+  height: 52px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  cursor: pointer;
+}
+
+.button svg {
+  margin-top: 2px;
+}

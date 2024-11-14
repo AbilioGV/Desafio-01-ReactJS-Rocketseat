@@ -1,0 +1,74 @@
+.task {
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  gap: 12px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 736px;
+  padding: 16px;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  cursor: pointer;
+}
+
+.task .deleteButton {
+  background: transparent;
+  color: var(--gray-300);
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+  height: 24px;
+}
+
+.task button:hover {
+  color: var(--danger);
+  
+}
+
+.roundCheckbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: transparent;
+  z-index: 1;
+}
+
+.checkIcon {
+  color: var(--gray-100);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.roundCheckbox:checked ~ .checkIcon {
+  opacity: 1;
+  z-index: 2;
+}
+
+.roundCheckbox:checked {
+  background: var(--purple);
+  border-color: var(--purple);
+}
+
+.roundCheckboxActive {
+  background: var(--purple);
+  border-color: var(--purple);
+}
+
+.taskContent {
+  color: var(--gray-100);
+  font-size: 14px;
+}
+
+.taskContentActive {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
